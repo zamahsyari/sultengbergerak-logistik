@@ -16,3 +16,4 @@ Route::get('result', 'HomeController@result');
 Route::get('upload', 'AdminController@upload');
 Route::post('upload', 'AdminController@uploadAttempt');
 Route::post('search', 'HomeController@search');
+Route::get('getkecamatan/{kabupaten}', 'HomeController@getKecamatan');

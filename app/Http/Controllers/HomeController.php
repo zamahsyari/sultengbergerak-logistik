@@ -50,4 +50,15 @@ class HomeController extends Controller
             'keyword' => $kecamatan.', '.$kabupaten
         ]);
     }
+    public function getKecamatan($kabupaten){
+        $data = DB::collection('logistik')
+            ->select('kecamatan')
+            ->where('kabupaten','=',$kabupaten)
+            ->get();
+        $res = [];
+        foreach($data as $row){
+            array_push($res, $row['kecamatan']);
+        }
+        return json_encode($res);
+    }
 }

@@ -14,18 +14,18 @@
         <form action="{{ url('search') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label>Kecamatan</label>
-                    <select name="kecamatan" class="form-control">
-                    @foreach ($kecamatan as $camat)
-                        <option value="{{$camat['kecamatan']}}">{{$camat['kecamatan']}}</option>
-                    @endforeach
+                    <label>Kabupaten</label>
+                    <select name="kabupaten" class="form-control" id="kabupaten">
+                        @foreach ($kabupaten as $bupati)
+                            <option value="{{$bupati['kabupaten']}}">{{$bupati['kabupaten']}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Kabupaten</label>
-                    <select name="kabupaten" class="form-control">
-                    @foreach ($kabupaten as $bupati)
-                        <option value="{{$bupati['kabupaten']}}">{{$bupati['kabupaten']}}</option>
+                    <label>Kecamatan</label>
+                    <select name="kecamatan" class="form-control" id="kecamatan">
+                    @foreach ($kecamatan as $camat)
+                        <option value="{{$camat['kecamatan']}}">{{$camat['kecamatan']}}</option>
                     @endforeach
                     </select>
                 </div>
@@ -34,6 +34,22 @@
         </div>
     </div>
 <script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script>
+    var kabupaten = document.getElementById('kabupaten');
+    kabupaten.onchange = function(){
+        var http = new XMLHttpRequest();
+        http.onreadystatechange = function(){
+            var parsed = JSON.parse(http.responseText);
+            var kecamatan = document.getElementById('kecamatan');
+            kecamatan.innerHTML = '';
+            for(var i=0; i < parsed.length; i++){
+                kecamatan.innerHTML += '<option>'+parsed[i]+'</option>';
+            }
+        };
+        http.open('GET',"<?php echo url('getkecamatan') ?>/"+kabupaten.value);
+        http.send();
+    };
+</script>
 <script>
 Highcharts.chart('container', {
     chart: {
@@ -63,6 +79,5 @@ Highcharts.chart('container', {
         data: <?php echo json_encode($data) ?>
     }]
 });
-
 </script>
 @endsection
