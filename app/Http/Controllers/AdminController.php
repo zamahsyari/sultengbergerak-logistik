@@ -39,8 +39,7 @@ class AdminController extends Controller
 
                 DB::collection('logistik')->insert($local);
             }
-        }else{
-            echo "HERE";
         }
+        return redirect('/');
     }
 }
