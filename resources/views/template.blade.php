@@ -20,25 +20,28 @@
           <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="index.html">HOME</a>
+                      <a class="nav-link" href="http://sultengbergerak.com/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pencarian%20orang.html">PENCARIAN ORANG</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/pencarian%20orang.html">PENCARIAN ORANG</a>
                     </li>
                     <li class="nav-item" style="background-color: #33CC99">
-                        <a class="nav-link" href="#" style="color: white">KEBUTUHAN LOGISTIK</a>
+                    <a class="nav-link" href="{{ url('/') }}" style="color: white">KEBUTUHAN LOGISTIK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="peta.html">PETA BENCANA</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/peta.html">PETA BENCANA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="relawan.html">RELAWAN</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/relawan.html">RELAWAN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="donasi.html">DONASI</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/donasi.html">DONASI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kontak%20penting.html">KONTAK PENTING</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/kontak%20penting.html">KONTAK PENTING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://sultengbergerak.com/informasi.html">INFORMASI</a>
                     </li>
                 </ul>
             </div>

@@ -17,6 +17,7 @@ class AdminController extends Controller
             $spreadsheet = $reader->load($request->file('excel'));
             $worksheet = $spreadsheet->getActiveSheet();
             $numRow = 1;
+            DB::collection('logistik')->delete();
             foreach($worksheet->getRowIterator() as $row){
                 $numRow++;
                 $local = [];
@@ -24,7 +25,8 @@ class AdminController extends Controller
                 $local['telp']  = $worksheet->getCell('C'.$numRow)->getValue();
                 $local['tgl']  = $worksheet->getCell('D'.$numRow)->getValue();
                 $local['narasi']  = $worksheet->getCell('E'.$numRow)->getValue();
-                $kebutuhan = explode(';',strtolower($worksheet->getCell('F'.$numRow)->getValue()));
+                $converted = trim(str_replace(',',';',strtolower($worksheet->getCell('F'.$numRow)->getValue())));
+                $kebutuhan = explode(';',$converted);
                 $needs = [];
                 foreach($kebutuhan as $butuh){
                     array_push($needs,$butuh);
