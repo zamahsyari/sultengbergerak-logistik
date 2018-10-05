@@ -12,8 +12,9 @@
 */
 
 Route::get('/', 'HomeController@home');
-Route::get('result', 'HomeController@result');
+Route::get('mobile', 'HomeController@mobile');
 Route::get('upload', 'AdminController@upload');
 Route::post('upload', 'AdminController@uploadAttempt');
 Route::post('search', 'HomeController@search');
+Route::post('mobilesearch', 'HomeController@mobilesearch');
 Route::get('getkecamatan/{kabupaten}', 'HomeController@getKecamatan');
