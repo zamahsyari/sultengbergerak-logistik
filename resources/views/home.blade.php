@@ -33,6 +33,11 @@
             </form>
         </div>
     </div>
+<script>
+    if(screen.width < 640 ){
+        location.href = "{{url('mobile')}}";
+    }
+</script>
 <script src="https://code.highcharts.com/highcharts.src.js"></script>
 <script>
     var kabupaten = document.getElementById('kabupaten');
