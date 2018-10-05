@@ -1,0 +1,250 @@
+@font-face {
+    font-family: satu;
+    src: url(../font.otf);
+}
+
+body {
+    font-family: satu, sans-serif !important;
+}
+
+nav {
+    -webkit-box-shadow: 0px 15px 23px -4px rgba(209, 209, 209, 1);
+    -moz-box-shadow: 0px 15px 23px -4px rgba(209, 209, 209, 1);
+    box-shadow: 0px 15px 23px -4px rgba(209, 209, 209, 1);
+    padding: 0 !important;
+}
+
+nav.mainpage {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    padding: 0 !important;
+}
+
+nav img {
+    margin-top: -30px;
+    margin-left: 30px;
+    max-height: 60px;
+    position: absolute;
+}
+
+nav li {
+    padding: 15px 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: 100%;
+    background-position: top left;
+    padding: 90px;
+}
+
+.isiheader {
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.header.pencarian {
+    background-image: url(../img/pencarian%20orang.jpg);
+    background-size: 100%;
+    background-position: right 0px top -130px;
+    padding: 130px;
+}
+
+.enamaset .row {
+    margin-top: 20px;
+}
+
+.enamaset img {
+    padding: 10px;
+    border: 1px solid #33CC99;
+    border-radius: 15px;
+    height: 100px;
+}
+
+.enamaset h6 {
+    font-size: 14px;
+    font-style: normal;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.enamaset a {
+    color: #707070;
+}
+
+.enamaset a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.embedsection {
+    background-color: #F2F3F5;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.embedsection .icon {
+    position: absolute;
+}
+
+.embedsection h5 {
+    margin-left: 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    color: #707070;
+    border-bottom: 2px solid #33cc99;
+    margin-bottom: 20px;
+}
+
+.isi {
+    background-color: #F2F3F5;
+    padding: 110px 0;
+}
+
+.isi .container{
+    width: 75%;
+}
+
+.isi.peta{
+    background-color: white;
+    padding: 40px;
+}
+
+.isi.pencarian{
+    padding-top: 50px;
+}
+
+.isi.pencarian{
+    padding: 0px;
+}
+
+.badan {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.badan .col {
+    padding: 0 0 20px 50px;
+    border-right: 2px solid #f2f3f5;
+}
+
+.pencarian .col {
+    padding-right: 30px;
+    margin-top: -75px;
+}
+
+.badan .col-11.donasi{
+    margin-left: 40px;
+}
+
+.badan .col-11.peta{
+    margin-left: 40px;
+}
+
+.badan .col-5 {
+    padding: 0 0 20px 30px;
+}
+
+.col-5.pencarian {
+    padding-left: 15px;
+}
+
+.badan h4 {
+    margin-top: -25px;
+    margin-bottom: 25px;
+    color: #707070;
+    letter-spacing: 3px;
+}
+
+.pencarian h2 {
+    padding-top: 50px;
+    margin-bottom: 25px;
+    color: #707070;
+    letter-spacing: 3px;
+}
+
+.pencarian h5 {
+    margin-top: -25px;
+    margin-bottom: 25px;
+    color: #707070;
+    letter-spacing: 3px;
+}
+
+table{
+    width: 100%;
+}
+
+.badan .col-5 p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.emailkontak{
+    color: #33CC99;
+}
+
+.emailkontak:hover{
+    text-decoration: none;
+    color: #259b74;
+}
+
+.kontak input{
+    border: 0;
+    background-color: #EEEEEE;
+}
+
+.kontak textarea{
+    background-color: #EEEEEE;
+    border: 0;
+}
+
+
+button.kontak{
+    background-color: #33CC99;
+    color: white;
+    margin-left: 253px;
+    letter-spacing: 1px;
+}
+.footer-copyright {
+    background-color: #33cc99;
+}
+
+.footer-copyright.peta {
+    margin-top: -7px;
+}
+
+.footer-copyright .kiri {
+    color: #f2f3f5;
+    padding-left: 50px;
+    position: absolute;
+}
+
+.footer-copyright .kanan {
+    padding-right: 50px;
+}
+
+.footer-copyright .kanan a {
+    margin-left: 100px;
+    color: #f2f3f5;
+}
+
+.footer-copyright .kanan a:hover {
+    text-decoration: none;
+    color: #f2f3f5;
+}
+
+.logistik{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: white;
+}
