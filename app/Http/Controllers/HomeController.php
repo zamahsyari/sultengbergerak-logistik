@@ -54,6 +54,7 @@ class HomeController extends Controller
         $data = DB::collection('logistik')
             ->select('kecamatan')
             ->where('kabupaten','=',$kabupaten)
+            ->groupBy('kecamatan')
             ->get();
         $res = [];
         foreach($data as $row){
