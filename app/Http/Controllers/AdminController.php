@@ -24,7 +24,11 @@ class AdminController extends Controller
                 $local['nama']  = $worksheet->getCell('B'.$numRow)->getValue();
                 $local['telp']  = $worksheet->getCell('C'.$numRow)->getValue();
                 $local['jenis']  = $worksheet->getCell('D'.$numRow)->getValue();
-                $local['tgl']  = $worksheet->getCell('E'.$numRow)->getValue();
+                $excel_date = $worksheet->getCell('E'.$numRow)->getValue(); //here is that value 41621 or 41631
+                $unix_date = ($excel_date - 25569) * 86400;
+                $excel_date = 25569 + ($unix_date / 86400);
+                $unix_date = ($excel_date - 25569) * 86400;
+                $local['tgl']  = gmdate("Y-m-d", $unix_date);
                 $local['narasi']  = $worksheet->getCell('F'.$numRow)->getValue();
                 $converted = trim(str_replace(',',';',strtolower($worksheet->getCell('G'.$numRow)->getValue())));
                 $kebutuhan = explode(';',$converted);

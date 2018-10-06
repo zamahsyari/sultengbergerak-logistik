@@ -24,6 +24,7 @@
                 <div class="form-group">
                     <label>Kecamatan</label>
                     <select name="kecamatan" class="form-control" id="kecamatan">
+                        <option value=""></option>
                     @foreach ($kecamatan as $camat)
                         <option value="{{$camat['kecamatan']}}">{{$camat['kecamatan']}}</option>
                     @endforeach
