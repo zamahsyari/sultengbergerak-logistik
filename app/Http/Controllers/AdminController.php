@@ -33,7 +33,7 @@ class AdminController extends Controller
                 }
                 $local['kebutuhan'] = $needs;
                 $local['lokasi']  = $worksheet->getCell('G'.$numRow)->getValue();
-                $local['jumlah']  = (int)$worksheet->getCell('H'.$numRow)->getValue();
+                $local['jumlah']  = $worksheet->getCell('H'.$numRow)->getValue();
                 $local['kecamatan']  = $worksheet->getCell('I'.$numRow)->getValue();
                 $local['kabupaten']  = $worksheet->getCell('J'.$numRow)->getValue();
 
