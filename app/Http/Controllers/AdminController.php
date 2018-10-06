@@ -23,19 +23,23 @@ class AdminController extends Controller
                 $local = [];
                 $local['nama']  = $worksheet->getCell('B'.$numRow)->getValue();
                 $local['telp']  = $worksheet->getCell('C'.$numRow)->getValue();
-                $local['tgl']  = $worksheet->getCell('D'.$numRow)->getValue();
-                $local['narasi']  = $worksheet->getCell('E'.$numRow)->getValue();
-                $converted = trim(str_replace(',',';',strtolower($worksheet->getCell('F'.$numRow)->getValue())));
+                $local['jenis']  = $worksheet->getCell('D'.$numRow)->getValue();
+                $local['tgl']  = $worksheet->getCell('E'.$numRow)->getValue();
+                $local['narasi']  = $worksheet->getCell('F'.$numRow)->getValue();
+                $converted = trim(str_replace(',',';',strtolower($worksheet->getCell('G'.$numRow)->getValue())));
                 $kebutuhan = explode(';',$converted);
                 $needs = [];
                 foreach($kebutuhan as $butuh){
                     array_push($needs,$butuh);
                 }
                 $local['kebutuhan'] = $needs;
-                $local['lokasi']  = $worksheet->getCell('G'.$numRow)->getValue();
-                $local['jumlah']  = $worksheet->getCell('H'.$numRow)->getValue();
-                $local['kecamatan']  = $worksheet->getCell('I'.$numRow)->getValue();
-                $local['kabupaten']  = $worksheet->getCell('J'.$numRow)->getValue();
+                $local['lokasi']  = $worksheet->getCell('H'.$numRow)->getValue();
+                $local['jumlah']  = $worksheet->getCell('I'.$numRow)->getValue();
+                $local['kecamatan']  = $worksheet->getCell('J'.$numRow)->getValue();
+                $local['kabupaten']  = $worksheet->getCell('K'.$numRow)->getValue();
+                $local['status']  = $worksheet->getCell('L'.$numRow)->getValue();
+                $local['keterangan']  = $worksheet->getCell('M'.$numRow)->getValue();
+                $local['catatan']  = $worksheet->getCell('N'.$numRow)->getValue();
 
                 DB::collection('logistik')->insert($local);
             }

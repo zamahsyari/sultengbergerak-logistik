@@ -11,18 +11,22 @@
             <br/><br/>
             <table class="table table-bordered table-striped">
                 <tr>
-                    <th>Tanggal</th>
+                    <th>Tanggal laporan</th>
+                    <th>Jenis Laporan</th>
                     <th>Kebutuhan</th>
                     <th>Jumlah</th>
-                    <th>Lokasi</th>
+                    <th>Status</th>
+                    <th>Alamat</th>
                     <th>Kontak</th>
                 </tr>
                 @foreach($data as $row)
                     <tr>
                         <td>{{$row['tgl']}}</td>
+                        <td>{{$row['jenis']}}</td>
                         <td>{{implode(', ',$row['kebutuhan'])}}</td>
                         <td>{{$row['jumlah']}}</td>
-                        <td>{{$row['lokasi']}}</td>
+                        <td>{{$row['status']}}</td>
+                        <td>{{$row['alamat']}}</td>
                         <td>{{$row['telp']}}</td>
                     </tr>
                 @endforeach
