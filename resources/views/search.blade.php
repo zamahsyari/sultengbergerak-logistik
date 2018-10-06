@@ -26,7 +26,7 @@
                         <td>{{implode(', ',$row['kebutuhan'])}}</td>
                         <td>{{$row['jumlah']}}</td>
                         <td>{{$row['status']}}</td>
-                        <td>{{$row['alamat']}}</td>
+                        <td>{{$row['lokasi']}}</td>
                         <td>{{$row['telp']}}</td>
                     </tr>
                 @endforeach
