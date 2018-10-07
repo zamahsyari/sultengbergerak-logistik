@@ -31,10 +31,10 @@
                       <a class="nav-link" href="http://sultengbergerak.com/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://sultengbergerak.com/pencarian%20orang.html">PENCARIAN ORANG</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/pencarianorang.html">PENCARIAN ORANG</a>
                     </li>
-                    <li class="nav-item" style="background-color: #33CC99">
-                    <a class="nav-link" href="{{ url('/') }}" style="color: white">KEBUTUHAN LOGISTIK</a>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/') }}">KEBUTUHAN LOGISTIK</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://sultengbergerak.com/peta.html">PETA BENCANA</a>
@@ -46,7 +46,7 @@
                         <a class="nav-link" href="http://sultengbergerak.com/donasi.html">DONASI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://sultengbergerak.com/kontak%20penting.html">KONTAK PENTING</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/kontakpenting.html">KONTAK PENTING</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://sultengbergerak.com/informasi.html">INFORMASI</a>
@@ -62,14 +62,18 @@
                 @yield('content')
             </div>
         </div>
-        <div class="footer-copyright py-3">
-            <div class=" kiri text-left">
-                © Copyright 2018 - Koalisi Masyarakat Sipil
-            </div>
-            <div class="col-lg kanan text-right">
-                <a href="#">FAQ</a>
-                <a href="http://www.sultengbergerak.com/tentangkami.html">ABOUT US</a>
-            </div>
+
+    <!-- Footer -->
+    <div class="footer-copyright py-3">
+        <div class=" kiri text-left">
+            &copy; Copyright 2018 - Koalisi Masyarakat Sipil
         </div>
+        <div class="col-lg kanan text-right">
+            <a href="#">FAQ</a>
+            <a href="tentangkami.html">TENTANG KAMI</a>
+        </div>
+    </div>
+    <!-- end of Footer -->
+
     </body>
 </html>

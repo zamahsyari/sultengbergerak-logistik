@@ -5,10 +5,11 @@
     </div> --}}
 @endsection
 @section('content')
-    <div class="row logistik">
-        <div class="col-md-8">
-            <h4>Informasi Kebutuhan</h4>
+    <div class="row logistik pencarian">
+        <div class="col">
+            <h3>INFORMASI PENCARIAN</h3>
             <div id="container" style="width:100%; height:400px;"></div>
+	Dihimpun dari laporan masyarakat via Broadcast Whatsapp<br>
         </div>
         <div class="col-md-4">
         <form action="{{ url('mobilesearch') }}" method="POST">

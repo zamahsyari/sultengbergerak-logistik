@@ -38,7 +38,7 @@
                         <a class="nav-link" href="http://sultengbergerak.com/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://sultengbergerak.com/pencarian%20orang.html">PENCARIAN ORANG</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/pencarianorang.html">PENCARIAN ORANG</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="{{ url('/') }}">KEBUTUHAN LOGISTIK</a>
@@ -53,13 +53,13 @@
                         <a class="nav-link" href="http://sultengbergerak.com/donasi.html">DONASI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://sultengbergerak.com/kontak%20penting.html">KONTAK PENTING</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/kontakpenting.html">KONTAK PENTING</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://sultengbergerak.com/informasi.html">INFORMASI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://sultengbergerak.com/tentang%20kami.html">TENTANG KAMI</a>
+                        <a class="nav-link" href="http://sultengbergerak.com/tentangkami.html">TENTANG KAMI</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://sultengbergerak.com/faq.html">FAQ</a>

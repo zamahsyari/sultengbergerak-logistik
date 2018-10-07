@@ -5,9 +5,9 @@
     </div> --}}
 @endsection
 @section('content')
-    <div class="row logistik">
-        <div class="col-md-12">
-            <h4>Hasil pencarian untuk {{$keyword}}</h4>
+    <div class="row logistik  pencarian">
+        <div class="col">
+            <h2>HASIL PENCARIAN UNTUK {{$keyword}}</h2>
             <br/><br/>
             <table class="table table-bordered table-striped">
                 <tr>

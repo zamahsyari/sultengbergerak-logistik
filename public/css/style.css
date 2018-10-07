@@ -29,10 +29,28 @@ nav img {
 }
 
 nav li {
-    padding: 15px 15px;
     font-size: 12px;
     letter-spacing: 2px;
-    margin-right: 10px;
+}
+
+nav a{
+    padding: 20px 20px !important;
+}
+
+nav a:hover{
+    background-color: #33CC99;
+}
+
+.nav-item:hover a{
+    color: white !important;
+}
+
+.active{
+    background-color: #33CC99;
+}
+
+.active a{
+    color: white !important;
 }
 
 .header {
@@ -64,7 +82,7 @@ nav li {
     padding: 10px;
     border: 1px solid #33CC99;
     border-radius: 15px;
-    height: 100px;
+    height: 90px;
 }
 
 .enamaset h6 {
@@ -118,6 +136,35 @@ nav li {
     padding: 40px;
 }
 
+.peta h2{
+    letter-spacing: 2px; 
+    margin-bottom: 30px;
+    color: #707070;
+}
+
+.peta h5{
+    letter-spacing: 1px; 
+    margin-top: 20px;
+    color: #707070;
+}
+
+.peta button{
+    margin-right: 20px;
+    background-color: #33cc99;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.peta button:hover{
+    background-color: #249670;
+}
+
+
+.peta .active{
+    background-color: #249670;
+    color: white;
+}
+
 .isi.pencarian{
     padding-top: 50px;
 }
@@ -135,6 +182,23 @@ nav li {
 .badan .col {
     padding: 0 0 20px 50px;
     border-right: 2px solid #f2f3f5;
+}
+
+.tentang .col-6 {
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+}
+
+.tentang h4 {
+    margin-bottom: 25px;
+    color: #707070;
+    letter-spacing: 3px;
+}
+
+.tentang p{
+    color: #707070;
+    letter-spacing: 1px;
 }
 
 .pencarian .col {
@@ -156,13 +220,6 @@ nav li {
 
 .col-5.pencarian {
     padding-left: 15px;
-}
-
-.badan h4 {
-    margin-top: -25px;
-    margin-bottom: 25px;
-    color: #707070;
-    letter-spacing: 3px;
 }
 
 .pencarian h2 {
@@ -208,13 +265,13 @@ table{
     border: 0;
 }
 
-
 button.kontak{
     background-color: #33CC99;
     color: white;
     margin-left: 253px;
     letter-spacing: 1px;
 }
+
 .footer-copyright {
     background-color: #33cc99;
 }
@@ -243,11 +300,26 @@ button.kontak{
     color: #f2f3f5;
 }
 
+#info li{
+    list-style: none;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+#info li a{
+    text-decoration: none;
+    font-size: 14pt;
+    color: #33CC99;
+    font-family: satu;
+    src: url(../font.otf);
+}
+#info li p{
+    margin-top: -10px;
+    color: #777777;
+    font-family: satu;
+    src: url(../font.otf);
+}
 .logistik{
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 40px;
     background-color: white;
-}
-.logistik h4{
-    display: inline;
 }

@@ -5,8 +5,8 @@
     </div> --}}
 @endsection
 @section('content')
-    <div class="row logistik">
-        <div class="col-md-12">
+    <div class="row logistik pencarian">
+        <div class="col">
             <h4>Hasil pencarian untuk {{$keyword}}</h4>
             <br/><br/>
             <div style="overflow-x:scroll; font-size:10pt;">
