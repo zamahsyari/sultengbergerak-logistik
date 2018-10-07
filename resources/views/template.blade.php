@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@yield('title')</title>
     <link href="{{ url('css/style.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ url('img/logo.png') }}">
+    <link rel="shortcut icon" href="{{ url('img/favicon.png') }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,7 +68,7 @@
             </div>
             <div class="col-lg kanan text-right">
                 <a href="#">FAQ</a>
-                <a href="#">ABOUT US</a>
+                <a href="http://www.sultengbergerak.com/tentangkami.html">ABOUT US</a>
             </div>
         </div>
     </body>
